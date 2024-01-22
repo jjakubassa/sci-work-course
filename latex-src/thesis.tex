@@ -1,34 +1,62 @@
 \documentclass{book}
 
 \usepackage{amsmath}
+\usepackage{graphicx}
 
+% Setup variables
 \title{Master Thesis}
 \author{Jonas Jakubassa}
+\bibliographystyle{ieeetr}
 
 \begin{document}
 
-\maketitle
-\newpage
+    \maketitle
 
-\tableofcontents
-\newpage
+    \tableofcontents
+    \listoffigures
 
-% Level 
-% 1	\part{part}
-% 0	\chapter{chapter}
-% 1	\section{section}
-% 2	\subsection{subsection}
-% 3	\subsubsection{subsubsection}
-% 4	\paragraph{paragraph}
-% 5	\subparagraph{subparagraph}
+    % Only for articles
+    % \begin{abstract}
+    %     This paper goes about.
+    % \end{abstract}
 
-\chapter{Introduction}
-\section{Theoretical Background}
-\subsection{Statistical Theory}
+    % Level 
+    % 1	\part{part}
+    % 0	\chapter{chapter} % not applicaple to article
+    % 1	\section{section}
+    % 2	\subsection{subsection}
+    % 3	\subsubsection{subsubsection}
+    % 4	\paragraph{paragraph}
+    % 5	\subparagraph{subparagraph}
 
-The real function $f$ on $D$ is continuous in the point $x \in D$, if for every $\epsilon>0$ there exists $\delta>0$ such that
-$$
-\forall y \in D \text { with }|x-y|<\delta \Longrightarrow|f(x)-f(y)|<\epsilon .
-$$
+    \chapter{Introduction}
+
+    \cite[p. ~275]{esser2023} claims something. Here is some other claim \cite{helbing1995,lu2022}. This is supported by \cite{chen2019a}
+
+    \section{Theoretical Background}
+    \subsection{Statistical Theory}
+
+    The real function $f$ on $D$ is continuous in the point $x \in D$, if for every $\epsilon>0$ there exists $\delta>0$ such that
+    $$
+    \forall y \in D \text { with }|x-y|<\delta \Longrightarrow|f(x)-f(y)|<\epsilon .
+    $$
+
+
+    \begin{table}[ht]
+        \centering
+
+        \begin{tabular}{l|l|r} 
+            Name & Departement & Salary \\
+            \hline 
+            John Connor & Costumer Service & $10^{\prime} 000$ \\
+            Brain & R \& D & $50^{\prime} 000$ \\
+            Malcolm & Management & $200^{\prime} 000$
+        \end{tabular}
+        \label{tab-employees}
+        \caption{The employees with their salaries from company XY}
+    \end{table}
+
+    \bibliography{literature}
 
 \end{document}
+
